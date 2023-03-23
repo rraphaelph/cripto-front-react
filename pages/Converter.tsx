@@ -14,7 +14,7 @@ const Converter: React.FC = () => {
       const data = await response.json();
       const bitcoinPriceInBRL = data.bitcoin.brl;
 
-      const bitcoinAmount = realAmount / bitcoinPriceInBRL;
+      const bitcoinAmount = realAmount && realAmount  / bitcoinPriceInBRL;
 
       setBitcoinAmount(bitcoinAmount.toFixed(8));
     } catch (error) {
@@ -22,11 +22,11 @@ const Converter: React.FC = () => {
     }
   };
 
-    useEffect(() => {
-      if (realAmount) {
-          convertRealToBitcoin();
-      }
-    }, [realAmount]);
+  useEffect(() => {
+    if (realAmount) {
+      convertRealToBitcoin();
+    }
+  }, [realAmount]);
 
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setRealAmount(Number(event.target.value));
