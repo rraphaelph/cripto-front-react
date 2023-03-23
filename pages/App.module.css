@@ -1,0 +1,32 @@
+.table {
+  font-family: Arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.th, .td {
+  text-align: center;
+  padding: 12px;
+}
+
+.th {
+  background-color: #0099ff;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.h1 {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  color: white;
+}
