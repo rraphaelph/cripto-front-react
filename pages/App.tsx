@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import styles from './App.module.css';
-
+import Converter from './Converter';
 interface CriptoPrecos {
   coin: string;
   price: number;
@@ -52,6 +52,7 @@ function CriptoPrecos() {
           ))}
         </tbody>
       </table>
+      <Converter />
     </div>
   );
 }
