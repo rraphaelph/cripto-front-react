@@ -1,7 +1,7 @@
 import React,{useEffect} from 'react';
 import ReactDOM from 'react-dom';
 import './App.module.css';
-import App from './App.tsx';
+import App from './App';
 
 
 function Index() {
