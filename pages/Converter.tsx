@@ -16,7 +16,7 @@ const Converter: React.FC = () => {
 
       const bitcoinAmount = realAmount && realAmount  / bitcoinPriceInBRL;
 
-      setBitcoinAmount(bitcoinAmount.toFixed(8));
+      setBitcoinAmount(bitcoinAmount && Number(bitcoinAmount.toFixed(8)));
     } catch (error) {
       console.error("Ocorreu um erro:", error);
     }
