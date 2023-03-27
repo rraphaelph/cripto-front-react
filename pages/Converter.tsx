@@ -38,7 +38,9 @@ const Converter: React.FC = () => {
       <div className={styles.h1}>
         Valor em Real
         </div>
+        <div className={styles.inputContainer}>
         <input className={styles.inputBitcoin} type="number" value={realAmount} onChange={handleInputChange} />
+        </div>
       {bitcoinAmount && (
         <p className={styles.p}>
           {realAmount} reais equivalem a {bitcoinAmount} bitcoins.
