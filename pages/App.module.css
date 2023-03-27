@@ -18,7 +18,7 @@
 }
 
 .tr:nth-child(even) {
-  background-color: #f2f2f2;
+  /* background-color: #f2f2f2; */
 }
 
 .h1,.p {
@@ -28,5 +28,57 @@
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: bold;
-  color: black;
+
+}
+.inputBitcoin{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #333;
+
+}
+.inputBitcoin:focus{
+  outline: none;
+}
+
+.light {
+  background-color: #fff;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.dark {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.themeToggle {
+  position: fixed;
+  top: 15px;
+  left: 10px;
+  padding: 0px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: transparent;
+  font-size: 25px;
+}
+
+.FaRegMoon{
+  color:white;
 }
