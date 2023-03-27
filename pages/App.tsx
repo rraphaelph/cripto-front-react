@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import styles from "./App.module.css";
 import Converter from "./Converter";
 import GlobalStyle from "./GlobalStyle";
-import { FaMoon } from "@react-icons/all-files/fa/FaMoon";
-import {FaRegMoon} from"@react-icons/all-files/fa/FaRegMoon"
+import { RiMoonFill } from "@react-icons/all-files/ri/RiMoonFill";
+import {RiSunFill} from"@react-icons/all-files/ri/RiSunFill"
 interface CriptoPrecos {
   coin: string;
   price: number;
@@ -43,7 +43,7 @@ function CriptoPrecos() {
   return (
     <div className={`${isDarkMode ? styles.dark : styles.light}`}>
     <button className={styles.themeToggle} onClick={handleThemeChange}>
-      {isDarkMode ? <FaMoon className={styles.FaRegMoon}/> :  <FaMoon/>}
+      {isDarkMode ? <RiSunFill className={styles.RiSunFill}/> :  <RiMoonFill/>}
     </button>
       <GlobalStyle />
       <h1 className={styles.h1}>Cotação atual criptos</h1>
